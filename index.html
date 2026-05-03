@@ -16,9 +16,9 @@
       
       <nav class="nav-desktop">
         <a href="#home" class="nav-link">Accueil</a>
+        <a href="#about" class="nav-link">À Propos</a>
         <a href="#photos" class="nav-link">Photos</a>
         <a href="#videos" class="nav-link">Vidéos</a>
-        <a href="#about" class="nav-link">À Propos</a>
         <a href="#skills" class="nav-link">Compétences</a>
       </nav>
 
@@ -31,9 +31,9 @@
 
     <nav class="nav-mobile" id="navMobile">
       <a href="#home" class="nav-link-mobile">Accueil</a>
+      <a href="#about" class="nav-link-mobile">À Propos</a>
       <a href="#photos" class="nav-link-mobile">Photos</a>
       <a href="#videos" class="nav-link-mobile">Vidéos</a>
-      <a href="#about" class="nav-link-mobile">À Propos</a>
       <a href="#skills" class="nav-link-mobile">Compétences</a>
       <a href="#projects" class="nav-link-mobile">Projets</a>
     </nav>
@@ -50,16 +50,30 @@
     <div class="racing-stripe-top"></div>
     
     <div class="hero-content">
-      <h1 class="hero-title">YOUENN PERZO</h1>
-      <div class="hero-subtitle">
-        <div class="hero-line"></div>
-        <p>Portfolio</p>
-        <div class="hero-line"></div>
+
+      <!-- Colonne gauche : photo de profil -->
+      <div class="hero-photo-col">
+        <div class="hero-photo-frame">
+          <img src="./images/PP.jpg" alt="Youenn Perzo" class="hero-photo"
+               onerror="this.src='./images/PP.jpeg'">
+          <div class="hero-photo-accent"></div>
+        </div>
       </div>
-      <a href="./CV_Youenn_Perzo_Communication_Creation_Contenu.pdf" class="btn-primary" download="CV_Youenn_Perzo">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-        Télécharger le CV
-      </a>
+
+      <!-- Colonne droite : texte -->
+      <div class="hero-text-col">
+        <h1 class="hero-title">YOUENN PERZO</h1>
+        <div class="hero-subtitle">
+          <div class="hero-line"></div>
+          <p>Portfolio</p>
+          <div class="hero-line"></div>
+        </div>
+        <a href="./CV_Youenn_Perzo_Communication_Creation_Contenu.pdf" class="btn-primary" download="CV_Youenn_Perzo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Télécharger le CV
+        </a>
+      </div>
+
     </div>
 
     <button class="scroll-indicator" onclick="document.getElementById('photos').scrollIntoView({behavior: 'smooth'})">
@@ -70,6 +84,38 @@
     <div class="corner-accent top-right"></div>
     <div class="corner-accent bottom-left"></div>
     <div class="corner-accent bottom-right"></div>
+  </section>
+
+  <section id="about" class="section-about">
+    <div class="section-container">
+      <div class="about-minimal">
+        <p class="about-tag">À PROPOS</p>
+        <h2 class="about-headline">Youenn Perzo</h2>
+        <div class="about-divider"></div>
+        <p class="about-body">
+          Je pratique la photographie et la vidéo avec une attention particulière portée aux ambiances, au mouvement et à l’émotion. Mon travail s’inscrit dans une approche de narration visuelle, à travers le rythme, la composition et le ressenti.        </p>
+        <p class="about-body">
+          J’ai suivi une formation en BUT Métiers du Multimédia et de l’Internet, en alternance pendant deux ans, ce qui m’a permis de développer une expérience concrète du milieu professionnel en tant que chargé de communication, ainsi qu’une approche globale de la création de contenus, de la production à la diffusion.
+        </p>
+        <p class="about-body">
+          À la suite de ces trois années, j’ai choisi de me spécialiser dans l’audiovisuel, qui est également une de mes passions.
+
+          Je poursuis aujourd’hui mon parcours en intégrant un master en création de contenu visuel au sein de Sup de Pub, et je suis actuellement à la recherche d’une alternance afin de continuer à développer mes compétences dans un cadre professionnel.
+       </p>
+       <p class="about-body">
+          Ce portfolio présente une sélection de mes réalisations en photographie et en vidéo, afin de donner un aperçu de mon travail.
+
+          N’hésitez pas à me contacter pour toute opportunité ou échange. 
+       </p>
+        <div class="about-meta">
+          <span>Photographe</span>
+          <span class="about-meta-sep">·</span>
+          <span>Vidéaste</span>
+          <span class="about-meta-sep">·</span>
+          <span>Créateur de contenu</span>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section id="photos" class="section-dark">
@@ -84,209 +130,22 @@
       <p class="section-subtitle">Capturer l'instant, figer l'émotion</p>
     </div>
     
-    <div class="stacked-carousel" id="photoCarousel">
-  <div class="stacked-track" id="photoTrack">
-
-    <div class="photo-stack" data-stack="0">
-      <div class="stack-card" style="--index: 4;"><img src="./images/Stretching_paris/5.webp" alt="Stretching Paris"></div>
-      <div class="stack-card" style="--index: 3;"><img src="./images/Stretching_paris/4.webp" alt="Stretching Paris"></div>
-      <div class="stack-card" style="--index: 2;"><img src="./images/Stretching_paris/3.webp" alt="Stretching Paris"></div>
-      <div class="stack-card" style="--index: 1;"><img src="./images/Stretching_paris/2.webp" alt="Stretching Paris"></div>
-      <div class="stack-card" style="--index: 0;"><img src="./images/Stretching_paris/1.webp" alt="Stretching Paris"></div>
-      <span class="stack-label">Stretching Paris</span>
+    <div class="section-container">
+      <button class="grid-toggle-btn" id="photoGridBtn" aria-label="Voir tous les projets photo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        VOIR TOUS LES PROJETS
+      </button>
     </div>
-
-    <div class="photo-stack" data-stack="1">
-      <div class="stack-card" style="--index: 4;"><img src="./images/Bloom_in_rennes/5.webp" alt="Bloom in Rennes"></div>
-      <div class="stack-card" style="--index: 3;"><img src="./images/Bloom_in_rennes/4.webp" alt="Bloom in Rennes"></div>
-      <div class="stack-card" style="--index: 2;"><img src="./images/Bloom_in_rennes/3.webp" alt="Bloom in Rennes"></div>
-      <div class="stack-card" style="--index: 1;"><img src="./images/Bloom_in_rennes/2.webp" alt="Bloom in Rennes"></div>
-      <div class="stack-card" style="--index: 0;"><img src="./images/Bloom_in_rennes/1.webp" alt="Bloom in Rennes"></div>
-      <span class="stack-label">Bloom in Rennes</span>
+    <div class="section-media-wrapper" id="photoMediaWrapper">
+      <div class="stacked-carousel" id="photoCarousel">
+        <div class="stacked-track" id="photoTrack">
+          <!-- Généré automatiquement par script.js — ne rien écrire ici -->
+        </div>
+      </div>
+      <div class="photo-grid" id="photoGrid">
+        <!-- Généré automatiquement par script.js — ne rien écrire ici -->
+      </div>
     </div>
-
-    <div class="photo-stack" data-stack="2">
-      <div class="stack-card" style="--index: 4;"><img src="./images/Supra/5.webp" alt="Supra"></div>
-      <div class="stack-card" style="--index: 3;"><img src="./images/Supra/4.webp" alt="Supra"></div>
-      <div class="stack-card" style="--index: 2;"><img src="./images/Supra/3.webp" alt="Supra"></div>
-      <div class="stack-card" style="--index: 1;"><img src="./images/Supra/2.webp" alt="Supra"></div>
-      <div class="stack-card" style="--index: 0;"><img src="./images/Supra/1.webp" alt="Supra"></div>
-      <span class="stack-label">Supra</span>
-    </div>
-
-    <div class="photo-stack" data-stack="3">
-      <div class="stack-card" style="--index: 4;"><img src="./images/103/5.webp" alt="Peugeot 103"></div>
-      <div class="stack-card" style="--index: 3;"><img src="./images/103/4.webp" alt="Peugeot 103"></div>
-      <div class="stack-card" style="--index: 2;"><img src="./images/103/3.webp" alt="Peugeot 103"></div>
-      <div class="stack-card" style="--index: 1;"><img src="./images/103/2.webp" alt="Peugeot 103"></div>
-      <div class="stack-card" style="--index: 0;"><img src="./images/103/1.webp" alt="Peugeot 103"></div>
-      <span class="stack-label">103</span>
-    </div>
-
-    <div class="photo-stack" data-stack="4">
-      <div class="stack-card" style="--index: 4;"><img src="./images/mx5nb/1.webp" alt="MX5 NB"></div>
-      <div class="stack-card" style="--index: 3;"><img src="./images/mx5nb/4.webp" alt="MX5 NB"></div>
-      <div class="stack-card" style="--index: 2;"><img src="./images/mx5nb/3.webp" alt="MX5 NB"></div>
-      <div class="stack-card" style="--index: 1;"><img src="./images/mx5nb/2.webp" alt="MX5 NB"></div>
-      <div class="stack-card" style="--index: 0;"><img src="./images/mx5nb/1.webp" alt="MX5 NB"></div>
-      <span class="stack-label">MX5 NB</span>
-    </div>
-
-    <div class="photo-stack" data-stack="5">
-      <div class="stack-card" style="--index: 4;"><img src="./images/opelcorsa/5.webp" alt="Opel Corsa"></div>
-      <div class="stack-card" style="--index: 3;"><img src="./images/opelcorsa/4.webp" alt="Opel Corsa"></div>
-      <div class="stack-card" style="--index: 2;"><img src="./images/opelcorsa/3.webp" alt="Opel Corsa"></div>
-      <div class="stack-card" style="--index: 1;"><img src="./images/opelcorsa/2.webp" alt="Opel Corsa"></div>
-      <div class="stack-card" style="--index: 0;"><img src="./images/opelcorsa/1.webp" alt="Opel Corsa"></div>
-      <span class="stack-label">Opel Corsa</span>
-    </div>
-
-    <div class="photo-stack" data-stack="6">
-      <div class="stack-card" style="--index: 4;"><img src="./images/Enora/5.webp" alt="Enora"></div>
-      <div class="stack-card" style="--index: 3;"><img src="./images/Enora/4.webp" alt="Enora"></div>
-      <div class="stack-card" style="--index: 2;"><img src="./images/Enora/3.webp" alt="Enora"></div>
-      <div class="stack-card" style="--index: 1;"><img src="./images/Enora/2.webp" alt="Enora"></div>
-      <div class="stack-card" style="--index: 0;"><img src="./images/Enora/1.webp" alt="Enora"></div>
-      <span class="stack-label">Enora</span>
-    </div>
-
-    <div class="photo-stack" data-stack="7">
-      <div class="stack-card" style="--index: 4;"><img src="./images/miata/7.webp" alt="Photo"></div>
-      <div class="stack-card" style="--index: 3;"><img src="./images/miata/2.webp" alt="Photo"></div>
-      <div class="stack-card" style="--index: 2;"><img src="./images/miata/3.webp" alt="Photo"></div>
-      <div class="stack-card" style="--index: 1;"><img src="./images/miata/4.webp" alt="Photo"></div>
-      <div class="stack-card" style="--index: 0;"><img src="./images/miata/7.webp" alt="Photo"></div>
-      <span class="stack-label">Drift spec miata</span>
-    </div>
-
-    <div class="photo-stack" data-stack="8">
-      <div class="stack-card" style="--index: 4;"><img src="./images/Dream_car/1.webp" alt="Photo"></div>
-      <div class="stack-card" style="--index: 3;"><img src="./images/Dream_car/2.webp" alt="Photo"></div>
-      <div class="stack-card" style="--index: 2;"><img src="./images/Dream_car/3.webp" alt="Photo"></div>
-      <div class="stack-card" style="--index: 1;"><img src="./images/Dream_car/4.webp" alt="Photo"></div>
-      <div class="stack-card" style="--index: 0;"><img src="./images/Dream_car/1.webp" alt="Photo"></div>
-      <span class="stack-label">Dream car</span>
-    </div>
-
-    <div class="photo-stack" data-stack="9">
-      <div class="stack-card" style="--index: 4;"><img src="./images/Ford_mustang/1.webp" alt="Photo"></div>
-      <div class="stack-card" style="--index: 3;"><img src="./images/Ford_mustang/2.webp" alt="Photo"></div>
-      <div class="stack-card" style="--index: 2;"><img src="./images/Ford_mustang/3.webp" alt="Photo"></div>
-      <div class="stack-card" style="--index: 1;"><img src="./images/Ford_mustang/4.webp" alt="Photo"></div>
-      <div class="stack-card" style="--index: 0;"><img src="./images/Ford_mustang/1.webp" alt="Photo"></div>
-      <span class="stack-label">Shoot at Edyzmotors</span>
-    </div>
-
-    <div class="photo-stack" data-stack="10">
-      <div class="stack-card" style="--index: 4;"><img src="./images/r34/1.webp" alt="Photo"></div>
-      <div class="stack-card" style="--index: 3;"><img src="./images/r34/2.webp" alt="Photo"></div>
-      <div class="stack-card" style="--index: 2;"><img src="./images/r34/3.webp" alt="Photo"></div>
-      <div class="stack-card" style="--index: 1;"><img src="./images/r34/4.webp" alt="Photo"></div>
-      <div class="stack-card" style="--index: 0;"><img src="./images/r34/1.webp" alt="Photo"></div>
-      <span class="stack-label">HCS R34</span>
-    </div>
-
-    <div class="photo-stack" data-stack="0">
-      <div class="stack-card" style="--index: 4;"><img src="./images/Stretching_paris/5.webp" alt="Stretching Paris"></div>
-      <div class="stack-card" style="--index: 3;"><img src="./images/Stretching_paris/4.webp" alt="Stretching Paris"></div>
-      <div class="stack-card" style="--index: 2;"><img src="./images/Stretching_paris/3.webp" alt="Stretching Paris"></div>
-      <div class="stack-card" style="--index: 1;"><img src="./images/Stretching_paris/2.webp" alt="Stretching Paris"></div>
-      <div class="stack-card" style="--index: 0;"><img src="./images/Stretching_paris/1.webp" alt="Stretching Paris"></div>
-      <span class="stack-label">Stretching Paris</span>
-    </div>
-
-    <div class="photo-stack" data-stack="1">
-      <div class="stack-card" style="--index: 4;"><img src="./images/Bloom_in_rennes/5.webp" alt="Bloom in Rennes"></div>
-      <div class="stack-card" style="--index: 3;"><img src="./images/Bloom_in_rennes/4.webp" alt="Bloom in Rennes"></div>
-      <div class="stack-card" style="--index: 2;"><img src="./images/Bloom_in_rennes/3.webp" alt="Bloom in Rennes"></div>
-      <div class="stack-card" style="--index: 1;"><img src="./images/Bloom_in_rennes/2.webp" alt="Bloom in Rennes"></div>
-      <div class="stack-card" style="--index: 0;"><img src="./images/Bloom_in_rennes/1.webp" alt="Bloom in Rennes"></div>
-      <span class="stack-label">Bloom in Rennes</span>
-    </div>
-
-    <div class="photo-stack" data-stack="2">
-      <div class="stack-card" style="--index: 4;"><img src="./images/Supra/5.webp" alt="Supra"></div>
-      <div class="stack-card" style="--index: 3;"><img src="./images/Supra/4.webp" alt="Supra"></div>
-      <div class="stack-card" style="--index: 2;"><img src="./images/Supra/3.webp" alt="Supra"></div>
-      <div class="stack-card" style="--index: 1;"><img src="./images/Supra/2.webp" alt="Supra"></div>
-      <div class="stack-card" style="--index: 0;"><img src="./images/Supra/1.webp" alt="Supra"></div>
-      <span class="stack-label">Supra</span>
-    </div>
-
-    <div class="photo-stack" data-stack="3">
-      <div class="stack-card" style="--index: 4;"><img src="./images/103/5.webp" alt="Peugeot 103"></div>
-      <div class="stack-card" style="--index: 3;"><img src="./images/103/4.webp" alt="Peugeot 103"></div>
-      <div class="stack-card" style="--index: 2;"><img src="./images/103/3.webp" alt="Peugeot 103"></div>
-      <div class="stack-card" style="--index: 1;"><img src="./images/103/2.webp" alt="Peugeot 103"></div>
-      <div class="stack-card" style="--index: 0;"><img src="./images/103/1.webp" alt="Peugeot 103"></div>
-      <span class="stack-label">103</span>
-    </div>
-
-   <div class="photo-stack" data-stack="4">
-      <div class="stack-card" style="--index: 4;"><img src="./images/mx5nb/1.webp" alt="MX5 NB"></div>
-      <div class="stack-card" style="--index: 3;"><img src="./images/mx5nb/4.webp" alt="MX5 NB"></div>
-      <div class="stack-card" style="--index: 2;"><img src="./images/mx5nb/3.webp" alt="MX5 NB"></div>
-      <div class="stack-card" style="--index: 1;"><img src="./images/mx5nb/2.webp" alt="MX5 NB"></div>
-      <div class="stack-card" style="--index: 0;"><img src="./images/mx5nb/1.webp" alt="MX5 NB"></div>
-      <span class="stack-label">MX5 NB</span>
-    </div>
-
-    <div class="photo-stack" data-stack="5">
-      <div class="stack-card" style="--index: 4;"><img src="./images/opelcorsa/5.webp" alt="Opel Corsa"></div>
-      <div class="stack-card" style="--index: 3;"><img src="./images/opelcorsa/4.webp" alt="Opel Corsa"></div>
-      <div class="stack-card" style="--index: 2;"><img src="./images/opelcorsa/3.webp" alt="Opel Corsa"></div>
-      <div class="stack-card" style="--index: 1;"><img src="./images/opelcorsa/2.webp" alt="Opel Corsa"></div>
-      <div class="stack-card" style="--index: 0;"><img src="./images/opelcorsa/1.webp" alt="Opel Corsa"></div>
-      <span class="stack-label">Opel Corsa</span>
-    </div>
-
-    <div class="photo-stack" data-stack="6">
-      <div class="stack-card" style="--index: 4;"><img src="./images/Enora/5.webp" alt="Enora"></div>
-      <div class="stack-card" style="--index: 3;"><img src="./images/Enora/4.webp" alt="Enora"></div>
-      <div class="stack-card" style="--index: 2;"><img src="./images/Enora/3.webp" alt="Enora"></div>
-      <div class="stack-card" style="--index: 1;"><img src="./images/Enora/2.webp" alt="Enora"></div>
-      <div class="stack-card" style="--index: 0;"><img src="./images/Enora/1.webp" alt="Enora"></div>
-      <span class="stack-label">Enora</span>
-    </div>
-
-    <div class="photo-stack" data-stack="11">
-      <div class="stack-card" style="--index: 4;"><img src="./images/miata/7.webp" alt="Photo"></div>
-      <div class="stack-card" style="--index: 3;"><img src="./images/miata/2.webp" alt="Photo"></div>
-      <div class="stack-card" style="--index: 2;"><img src="./images/miata/3.webp" alt="Photo"></div>
-      <div class="stack-card" style="--index: 1;"><img src="./images/miata/4.webp" alt="Photo"></div>
-      <div class="stack-card" style="--index: 0;"><img src="./images/miata/7.webp" alt="Photo"></div>
-      <span class="stack-label">Drift spec miata</span>
-    </div>
-
-    <div class="photo-stack" data-stack="12">
-      <div class="stack-card" style="--index: 4;"><img src="./images/Dream_car/1.webp" alt="Photo"></div>
-      <div class="stack-card" style="--index: 3;"><img src="./images/Dream_car/2.webp" alt="Photo"></div>
-      <div class="stack-card" style="--index: 2;"><img src="./images/Dream_car/3.webp" alt="Photo"></div>
-      <div class="stack-card" style="--index: 1;"><img src="./images/Dream_car/4.webp" alt="Photo"></div>
-      <div class="stack-card" style="--index: 0;"><img src="./images/Dream_car/1.webp" alt="Photo"></div>
-      <span class="stack-label">Dream car</span>
-    </div>
-
-    <div class="photo-stack" data-stack="13">
-      <div class="stack-card" style="--index: 4;"><img src="./images/Ford_mustang/1.webp" alt="Photo"></div>
-      <div class="stack-card" style="--index: 3;"><img src="./images/Ford_mustang/2.webp" alt="Photo"></div>
-      <div class="stack-card" style="--index: 2;"><img src="./images/Ford_mustang/3.webp" alt="Photo"></div>
-      <div class="stack-card" style="--index: 1;"><img src="./images/Ford_mustang/4.webp" alt="Photo"></div>
-      <div class="stack-card" style="--index: 0;"><img src="./images/Ford_mustang/1.webp" alt="Photo"></div>
-      <span class="stack-label">Shoot at Edyzmotors</span>
-    </div>
-
-    <div class="photo-stack" data-stack="14">
-      <div class="stack-card" style="--index: 4;"><img src="./images/r34/1.webp" alt="Photo"></div>
-      <div class="stack-card" style="--index: 3;"><img src="./images/r34/2.webp" alt="Photo"></div>
-      <div class="stack-card" style="--index: 2;"><img src="./images/r34/3.webp" alt="Photo"></div>
-      <div class="stack-card" style="--index: 1;"><img src="./images/r34/4.webp" alt="Photo"></div>
-      <div class="stack-card" style="--index: 0;"><img src="./images/r34/1.webp" alt="Photo"></div>
-      <span class="stack-label">HCS R34</span>
-    </div>
-
-  </div>
-</div>
   </section>
 
   <div class="lightbox" id="photoLightbox">
@@ -304,211 +163,20 @@
       <p class="section-subtitle">Donner vie aux images, raconter des histoires</p>
     </div>
     
-    <div class="carousel" id="videoCarousel">
-      <div class="carousel-track" id="videoTrack">
-        
-        <a href="https://youtu.be/YQZ7n2i1Ljg" target="_blank" class="video-item">
-          <div class="video-wrapper">
-            <img src="https://img.youtube.com/vi/YQZ7n2i1Ljg/maxresdefault.jpg" alt="Edit Assetto Corsa">
-            <div class="video-overlay">
-              <div class="play-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-              </div>
-            </div>
-          </div>
-          <div class="video-title">Edit Assetto Corsa - FPV Drone</div>
-        </a>
-
-        <a href="https://youtu.be/YHS0-ieY9Zg" target="_blank" class="video-item">
-          <div class="video-wrapper">
-            <img src="https://img.youtube.com/vi/YHS0-ieY9Zg/maxresdefault.jpg" alt="Lamborghini Cruise">
-            <div class="video-overlay">
-              <div class="play-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-              </div>
-            </div>
-          </div>
-          <div class="video-title">Lamborghini CRUISE</div>
-        </a>
-
-        <a href="https://youtu.be/FO5RYhEWQMk" target="_blank" class="video-item">
-          <div class="video-wrapper">
-            <img src="https://img.youtube.com/vi/FO5RYhEWQMk/maxresdefault.jpg" alt="Tokyo Night Drift">
-            <div class="video-overlay">
-              <div class="play-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-              </div>
-            </div>
-          </div>
-          <div class="video-title">Epic Illegal Street Drifting</div>
-        </a>
-
-        <a href="https://youtu.be/KoTDb0Fd9c4" target="_blank" class="video-item">
-          <div class="video-wrapper">
-            <img src="https://img.youtube.com/vi/KoTDb0Fd9c4/maxresdefault.jpg" alt="Racing in Tokyo">
-            <div class="video-overlay">
-              <div class="play-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-              </div>
-            </div>
-          </div>
-          <div class="video-title">Racing in Tokyo</div>
-        </a>
-
-        <a href="https://youtu.be/KGOYVMC9gxc" target="_blank" class="video-item">
-          <div class="video-wrapper">
-            <img src="https://img.youtube.com/vi/KGOYVMC9gxc/maxresdefault.jpg" alt="Old School & Underground">
-            <div class="video-overlay">
-              <div class="play-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-              </div>
-            </div>
-          </div>
-          <div class="video-title">Old School & Underground</div>
-        </a>
-
-        <a href="https://youtu.be/YFfNMV9hABU" target="_blank" class="video-item">
-          <div class="video-wrapper">
-            <img src="https://img.youtube.com/vi/YFfNMV9hABU/maxresdefault.jpg" alt="Hollywood Car Show">
-            <div class="video-overlay">
-              <div class="play-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-              </div>
-            </div>
-          </div>
-          <div class="video-title">Immersion au Hollywood Car Show</div>
-        </a>
-
-        <a href="https://youtu.be/ca_s9SsqNfQ" target="_blank" class="video-item">
-          <div class="video-wrapper">
-            <img src="https://img.youtube.com/vi/ca_s9SsqNfQ/maxresdefault.jpg" alt="Drone FPV">
-            <div class="video-overlay">
-              <div class="play-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-              </div>
-            </div>
-          </div>
-          <div class="video-title">Vol en drone FPV</div>
-        </a>
-
-
-        <a href="https://youtu.be/YQZ7n2i1Ljg" target="_blank" class="video-item">
-          <div class="video-wrapper">
-            <img src="https://img.youtube.com/vi/YQZ7n2i1Ljg/maxresdefault.jpg" alt="Edit Assetto Corsa">
-            <div class="video-overlay">
-              <div class="play-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-              </div>
-            </div>
-          </div>
-          <div class="video-title">Edit Assetto Corsa - FPV Drone</div>
-        </a>
-
-        <a href="https://youtu.be/YHS0-ieY9Zg" target="_blank" class="video-item">
-          <div class="video-wrapper">
-            <img src="https://img.youtube.com/vi/YHS0-ieY9Zg/maxresdefault.jpg" alt="Lamborghini Cruise">
-            <div class="video-overlay">
-              <div class="play-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-              </div>
-            </div>
-          </div>
-          <div class="video-title">Lamborghini CRUISE</div>
-        </a>
-
-        <a href="https://youtu.be/FO5RYhEWQMk" target="_blank" class="video-item">
-          <div class="video-wrapper">
-            <img src="https://img.youtube.com/vi/FO5RYhEWQMk/maxresdefault.jpg" alt="Tokyo Night Drift">
-            <div class="video-overlay">
-              <div class="play-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-              </div>
-            </div>
-          </div>
-          <div class="video-title">Epic Illegal Street Drifting</div>
-        </a>
-
-        <a href="https://youtu.be/KoTDb0Fd9c4" target="_blank" class="video-item">
-          <div class="video-wrapper">
-            <img src="https://img.youtube.com/vi/KoTDb0Fd9c4/maxresdefault.jpg" alt="Racing in Tokyo">
-            <div class="video-overlay">
-              <div class="play-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-              </div>
-            </div>
-          </div>
-          <div class="video-title">Racing in Tokyo</div>
-        </a>
-
-        <a href="https://youtu.be/KGOYVMC9gxc" target="_blank" class="video-item">
-          <div class="video-wrapper">
-            <img src="https://img.youtube.com/vi/KGOYVMC9gxc/maxresdefault.jpg" alt="Old School & Underground">
-            <div class="video-overlay">
-              <div class="play-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-              </div>
-            </div>
-          </div>
-          <div class="video-title">Old School & Underground</div>
-        </a>
-
-        <a href="https://youtu.be/YFfNMV9hABU" target="_blank" class="video-item">
-          <div class="video-wrapper">
-            <img src="https://img.youtube.com/vi/YFfNMV9hABU/maxresdefault.jpg" alt="Hollywood Car Show">
-            <div class="video-overlay">
-              <div class="play-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-              </div>
-            </div>
-          </div>
-          <div class="video-title">Immersion au Hollywood Car Show</div>
-        </a>
-
-        <a href="https://youtu.be/ca_s9SsqNfQ" target="_blank" class="video-item">
-          <div class="video-wrapper">
-            <img src="https://img.youtube.com/vi/ca_s9SsqNfQ/maxresdefault.jpg" alt="Drone FPV">
-            <div class="video-overlay">
-              <div class="play-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-              </div>
-            </div>
-          </div>
-          <div class="video-title">Vol en drone FPV</div>
-        </a>
-
-
-      </div>
-    </div>
-  </section>
-
-  <section id="about" class="section-secondary">
     <div class="section-container">
-      <div class="section-header">
-        <div class="section-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+      <button class="grid-toggle-btn" id="videoGridBtn" aria-label="Voir tous les projets vidéo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        VOIR TOUS LES PROJETS
+      </button>
+    </div>
+    <div class="section-media-wrapper" id="videoMediaWrapper">
+      <div class="carousel" id="videoCarousel">
+        <div class="carousel-track" id="videoTrack">
+          <!-- Généré automatiquement par script.js — ne rien écrire ici -->
         </div>
-        <h2 class="section-title">À PROPOS</h2>
-        <div class="section-line"></div>
       </div>
-
-      <div class="about-grid">
-        <div class="about-image-wrapper">
-          <div class="about-image">
-            <img src="./images/logo.jpg" alt="Youenn Perzo">
-          </div>
-          <div class="about-image-accent"></div>
-        </div>
-
-        <div class="about-content">
-          <h3 class="about-name">Youenn Perzo</h3>
-          <div class="about-line"></div>
-          <p class="about-text">
-Je pratique la photographie et la vidéo avec une attention particulière portée aux ambiances, au mouvement et à l’émotion. Mon approche vise à raconter quelque chose à travers l’image, en travaillant le rythme, la composition et le ressenti, quel que soit le sujet.          </p>
-          <p class="about-text">
-Mon parcours en BUT Métiers du Multimédia et de l’Internet m’a permis d’acquérir une réelle polyvalence. De la conception à la diffusion des contenus, je maîtrise l’ensemble de la chaîne de production audiovisuelle, tout en étant capable d’intervenir sur d’autres aspects du multimédia (communication, réflexion créative, formats, supports). Cette formation m’a appris à m’adapter à des projets et des contextes variés, au-delà de la seule production photo ou vidéo.          </p>
-
-        
-        </div>
+      <div class="video-grid" id="videoGrid">
+        <!-- Généré automatiquement par script.js — ne rien écrire ici -->
       </div>
     </div>
   </section>
@@ -549,37 +217,55 @@ Mon parcours en BUT Métiers du Multimédia et de l’Internet m’a permis d’
         </div>
       </div>
 
-      <h3 class="tools-title">OUTILS & LOGICIELS</h3>
-      <div class="tools-badges">
-        <div class="tool-badge">
-          <div class="tool-badge-icon">Lr</div>
-          <span>Lightroom</span>
+      <!-- Soft Skills -->
+      <div class="skills-group">
+        <h3 class="skills-group-title">SOFT SKILLS</h3>
+        <div class="tools-badges">
+          <div class="tool-badge"><span>Persévérance</span></div>
+          <div class="tool-badge"><span>Curiosité</span></div>
+          <div class="tool-badge"><span>Autonomie</span></div>
+          <div class="tool-badge"><span>Adaptabilité</span></div>
+          <div class="tool-badge"><span>Autodidacte</span></div>
+          <div class="tool-badge"><span>Storytelling</span></div>
         </div>
-        <div class="tool-badge">
-          <div class="tool-badge-icon">Ps</div>
-          <span>Photoshop</span>
-        </div>
-        <div class="tool-badge">
-          <div class="tool-badge-icon">Pr</div>
-          <span>Premiere Pro</span>
-        </div>
-        <div class="tool-badge">
-          <div class="tool-badge-icon">Ae</div>
-          <span>After Effects</span>
-        </div>
-        <div class="tool-badge">
-          <div class="tool-badge-icon">Da</div>
-          <span>DaVinci Resolve</span>
-        </div>
-        <div class="tool-badge">
-          <div class="tool-badge-icon">Bl</div>
-          <span>Blender</span>
+      </div>
+
+      <!-- Hard Skills -->
+      <div class="skills-group">
+        <h3 class="skills-group-title">HARD SKILLS</h3>
+        <div class="tools-badges">
+          <div class="tool-badge">
+            <div class="tool-badge-icon">Lr</div>
+            <span>Lightroom</span>
+          </div>
+          <div class="tool-badge">
+            <div class="tool-badge-icon">Ps</div>
+            <span>Photoshop</span>
+          </div>
+          <div class="tool-badge">
+            <div class="tool-badge-icon">Pr</div>
+            <span>Premiere Pro</span>
+          </div>
+          <div class="tool-badge">
+            <div class="tool-badge-icon">Ae</div>
+            <span>After Effects</span>
+          </div>
+          <div class="tool-badge">
+            <div class="tool-badge-icon">Da</div>
+            <span>DaVinci Resolve</span>
+          </div>
+          <div class="tool-badge">
+            <div class="tool-badge-icon">Bl</div>
+            <span>Blender</span>
+          </div>
+          <div class="tool-badge">
+            <div class="tool-badge-icon">Mv</div>
+            <span>Montage vidéo</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
-
-  
 
   <footer class="footer">
     <div class="footer-container">
@@ -625,8 +311,6 @@ Mon parcours en BUT Métiers du Multimédia et de l’Internet m’a permis d’
     </svg>
   </a>
 </div>
-
-
 
       <div class="footer-copyright">
         <p>© 2026 Tous droits réservés</p>
